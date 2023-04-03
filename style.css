@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: hsl(259, 100%, 65%);
+  --error: hsl(0, 100%, 67%);
+
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-blacK: hsl(0, 0%, 8%);
+}
+
+body {
+  background: var(--off-white);
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 2rem 2rem 12rem 2rem;
+  width: 57rem;
+  height: 65%;
+  padding: 4rem;
+}
+
+.card .inputs-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.card .inputs-container .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card .inputs-container .input .text {
+  color: var(--smokey-grey);
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+
+.card .inputs-container .input input {
+  height: 4.5rem;
+  width: 10rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  caret-color: var(--primary);
+  border-radius: 0.4rem;
+  outline: 3px solid var(--off-white);
+  border: none;
+  cursor: pointer;
+}
+
+.card .inputs-container .input input:focus {
+  outline: 2px solid var(--primary);
+}
+
+.card .separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .separator hr {
+  height: 3px;
+  width: 90%;
+  background-color: var(--off-white);
+  border: none;
+}
+
+.card .separator .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card .separator .circle:hover {
+  background: var(--off-blacK);
+}
+
+.card .output {
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 7rem;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card .output .number {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
