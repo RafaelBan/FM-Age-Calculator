@@ -131,9 +131,9 @@ function validateDate(yearsContainer, monthsContainer, daysContainer) {
 function enterErrorState(inputContainer, error) {
   let input = inputContainer.querySelector("input");
   input.classList.add("input-error");
-  let titleP = inputContainer.querySelector("p:nth-of-type(1)");
-  titleP.classList.add("text-error");
-  let p = inputContainer.querySelector("p:nth-of-type(2)");
+  let h1 = inputContainer.querySelector("h1");
+  h1.classList.add("text-error");
+  let p = inputContainer.querySelector("p");
   if (!p) {
     p = document.createElement("p");
     p.classList.add("p-error", "text-error");
@@ -145,9 +145,9 @@ function enterErrorState(inputContainer, error) {
 function exitErrorState(inputContainer) {
   let input = inputContainer.querySelector("input");
   input.classList.remove("input-error");
-  let titleP = inputContainer.querySelector("p:nth-of-type(1)");
-  titleP.classList.remove("text-error");
-  let p = inputContainer.querySelector("p:nth-of-type(2)");
+  let h1 = inputContainer.querySelector("h1");
+  h1.classList.remove("text-error");
+  let p = inputContainer.querySelector("p");
   if (p) {
     p.remove();
   }
