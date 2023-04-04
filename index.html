@@ -23,22 +23,22 @@
     <main>
       <div class="card">
         <form class="inputs-container">
-          <div class="input">
+          <div class="input" id="dayInput">
             <p class="text">DAY</p>
-            <input type="text" id="dayInput" />
+            <input type="number" placeholder="DD" />
           </div>
-          <div class="input">
+          <div class="input" id="monthInput">
             <p class="text">MONTH</p>
-            <input type="text" id="monthInput" />
+            <input type="number" placeholder="MM" />
           </div>
-          <div class="input">
+          <div class="input" id="yearInput">
             <p class="text">YEAR</p>
-            <input type="text" id="yearInput" />
+            <input type="number" placeholder="YYYY" />
           </div>
         </form>
         <div class="separator">
           <hr />
-          <div class="circle" onclick="calculateAge()">
+          <div class="circle" onclick="submit()">
             <img src="assets/images/icon-arrow.svg" />
           </div>
         </div>

@@ -39,6 +39,7 @@ main {
   width: 57rem;
   height: 65%;
   padding: 4rem;
+  margin: 1rem;
 }
 
 .card .inputs-container {
@@ -59,7 +60,7 @@ main {
 }
 
 .card .inputs-container .input input {
-  height: 4.5rem;
+  height: 4rem;
   width: 10rem;
   padding: 1.5rem;
   font-size: 2rem;
@@ -70,6 +71,20 @@ main {
   outline: 3px solid var(--off-white);
   border: none;
   cursor: pointer;
+}
+
+.input-error {
+  outline: 2px solid var(--error) !important;
+}
+
+.text-error {
+  color: var(--error) !important;
+}
+
+.p-error {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .card .inputs-container .input input:focus {
@@ -125,4 +140,7 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 775px) {
 }
